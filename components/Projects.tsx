@@ -75,17 +75,17 @@ const Projects: React.FC = () => {
           >
             {/* Gradient Background Effect */}
             <div className={`absolute inset-0 bg-gradient-to-br via-transparent transition-opacity duration-700 pointer-events-none ${project.id === 'smart-student' ? 'from-orange-500/10 to-orange-300/5 opacity-0 group-hover:opacity-100'
-              : project.id === 'gaming-platform' ? 'from-sky-500/15 to-blue-400/10 opacity-0 group-hover:opacity-100'
+              : project.id === 'routestitch' ? 'from-sky-500/15 to-blue-400/10 opacity-0 group-hover:opacity-100'
                 : project.id === 'ai-brain' ? 'from-[#7E2553]/15 to-[#7E2553]/10 opacity-0 group-hover:opacity-100'
                   : 'from-indigo-900/20 to-purple-900/20 opacity-0 group-hover:opacity-100'
               }`}></div>
             <div className={`absolute -top-40 -right-40 w-96 h-96 rounded-full blur-[100px] pointer-events-none transition-opacity duration-700 ${project.id === 'smart-student' ? 'bg-orange-400/15 opacity-0 group-hover:opacity-100'
-              : project.id === 'gaming-platform' ? 'bg-sky-400/20 opacity-0 group-hover:opacity-100'
+              : project.id === 'routestitch' ? 'bg-sky-400/20 opacity-0 group-hover:opacity-100'
                 : project.id === 'ai-brain' ? 'bg-[#7E2553]/20 opacity-0 group-hover:opacity-100'
                   : 'bg-purple-600/20 opacity-0 group-hover:opacity-100'
               }`}></div>
             <div className={`absolute -bottom-40 -left-40 w-96 h-96 rounded-full blur-[100px] pointer-events-none transition-opacity duration-700 ${project.id === 'smart-student' ? 'bg-orange-300/10 opacity-0 group-hover:opacity-100'
-              : project.id === 'gaming-platform' ? 'bg-blue-300/15 opacity-0 group-hover:opacity-100'
+              : project.id === 'routestitch' ? 'bg-blue-300/15 opacity-0 group-hover:opacity-100'
                 : project.id === 'ai-brain' ? 'bg-[#7E2553]/15 opacity-0 group-hover:opacity-100'
                   : 'bg-indigo-600/20 opacity-0 group-hover:opacity-100'
               }`}></div>
@@ -114,8 +114,8 @@ const Projects: React.FC = () => {
                 ? 'text-white group-hover:text-white group-hover:[text-shadow:0_0_10px_#FF0000,0_0_20px_#FF0000,0_0_40px_#FF0000,0_0_60px_#FF0000,0_0_80px_#FF0000]'
                 : project.id === 'smart-student'
                   ? 'text-white group-hover:text-white group-hover:[text-shadow:0_0_10px_#00ff5b,0_0_20px_#00ff5b,0_0_40px_#00ff5b,0_0_60px_#00ff5b,0_0_80px_#00ff5b]'
-                  : project.id === 'gaming-platform'
-                    ? 'text-white group-hover:text-white group-hover:[text-shadow:0_0_10px_#FFD700,0_0_20px_#FFD700,0_0_40px_#FFD700,0_0_60px_#FFD700,0_0_80px_#FFD700]'
+                  : project.id === 'routestitch'
+                    ? 'text-white group-hover:text-white group-hover:[text-shadow:0_0_10px_#38BDF8,0_0_20px_#38BDF8,0_0_40px_#38BDF8,0_0_60px_#38BDF8,0_0_80px_#38BDF8]'
                     : project.id === 'ai-brain'
                       ? 'text-white group-hover:text-white group-hover:[text-shadow:0_0_10px_#26CCC2,0_0_20px_#26CCC2,0_0_40px_#26CCC2,0_0_60px_#26CCC2,0_0_80px_#26CCC2]'
                       : 'text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-white/50'

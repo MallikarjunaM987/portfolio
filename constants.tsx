@@ -29,11 +29,11 @@ export const PROJECTS: Project[] = [
     tech: ["Flutter", "Firebase", "Accessibility"],
   },
   {
-    id: "gaming-platform",
-    title: "GAMING HUB",
-    category: "Interactive Platform",
-    description: "Developed a component-based architecture following modern gaming UI standards with fluid animations and low-latency interaction.",
-    tech: ["React.js", "Tailwind CSS", "GSAP"],
+    id: "routestitch",
+    title: "ROUTESTITCH",
+    category: "Multi-Modal Travel Platform",
+    description: "A unified multi-modal travel platform aggregating trains, flights, buses, and local transit into a single journey optimizer. Features an interactive TripBuilder with smart buffer-time management to eliminate missed connections.",
+    tech: ["React", "TypeScript", "Node.js", "Express", "Tailwind CSS", "Vite", "Zod"],
   },
   {
     id: "ai-brain",

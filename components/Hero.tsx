@@ -45,6 +45,32 @@ const Hero: React.FC = () => {
         }
       });
 
+      // Word Split Effect — MALLIKARJUNA slides left, MUDHOL slides right as user scrolls down
+      // When scrolling back up, they reunite — giving a "split on scroll" feel
+      gsap.to(".word-first", {
+        x: "-25vw",
+        opacity: 0,
+        ease: "power2.inOut",
+        scrollTrigger: {
+          trigger: containerRef.current,
+          start: "top top",
+          end: "70% top",
+          scrub: 2,
+        }
+      });
+
+      gsap.to(".word-second", {
+        x: "25vw",
+        opacity: 0,
+        ease: "power2.inOut",
+        scrollTrigger: {
+          trigger: containerRef.current,
+          start: "top top",
+          end: "70% top",
+          scrub: 2,
+        }
+      });
+
     }, containerRef);
 
     return () => ctx.revert();
@@ -64,12 +90,12 @@ const Hero: React.FC = () => {
       <div className="mt-20 hero-text-container">
         <h1 className="text-[12vw] md:text-[8vw] lg:text-[5.5vw] leading-[0.85] font-syne font-black text-white uppercase overflow-visible text-center lg:text-left">
           <div className="flex flex-wrap justify-center lg:justify-start">
-            {/* Name Row 1 */}
-            <div className="flex flex-nowrap mb-2 lg:mb-0 mr-4 lg:mr-4">
+            {/* Name Row 1 — slides LEFT on scroll */}
+            <div className="word-first flex flex-nowrap mb-2 lg:mb-0 mr-4 lg:mr-4">
               {renderText(PERSONAL_INFO.firstName)}
             </div>
-            {/* Name Row 2 */}
-            <div className="flex flex-nowrap text-outline">
+            {/* Name Row 2 — slides RIGHT on scroll */}
+            <div className="word-second flex flex-nowrap text-outline">
               {renderText(PERSONAL_INFO.lastName)}
             </div>
           </div>
